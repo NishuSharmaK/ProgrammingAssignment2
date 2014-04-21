@@ -5,6 +5,7 @@
 #  get function gets the value of the matrix
 #  setinv function sets and caches the inverse of matrix
 #  getinv function gets the value of the inverted matrix
+#  Assumption : the matrix is inversible.
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
