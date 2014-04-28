@@ -39,7 +39,7 @@ cacheSolve <- function(x, ...) {
   }
   # Gets the original matrix 
   data <- x$get()
-  if(length (which (is.na(data))) != 0) { stop("matrix data is NA") }
+  if(length(which (is.na(data))) != 0) { stop("matrix data is NA") }
   # Compute inverse and cache it.
   inv <- solve(data, ...)
   x$setinv(inv)
